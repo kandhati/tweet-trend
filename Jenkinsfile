@@ -4,9 +4,9 @@ pipeline {
     }
 
     stages {
-        stage('Hello') {
+        stage('Clone-code') {
             steps {
-               echo 'Hello World, Testing"
+               git branch: 'main', url: 'https://github.com/kandhati/tweet-trend.git'
             }
         }
     }
